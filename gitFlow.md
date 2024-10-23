@@ -90,13 +90,25 @@ git push origin develop
 4. **Crear una release:**
 ```bash
 git checkout -b release/1.2.0 develop
-# Realizar ajustes finales
-git checkout master
-git merge --no-ff release/1.2.0
-git tag -a v1.2.0
-git checkout develop
-git merge --no-ff release/1.2.0
 ```
+
+### crear un Pull request para desde la rama release a la rama main
+
+```bash
+git tag -a v1.2.0
+```
+
+- crear un Pull request para desde la rama release a la rama main
+- hacer merge de la rama release a la rama main
+- dentro de la rama main hacer un tag
+
+```bash
+git tag -a v1.2.0
+git push --tags
+```
+- entrar en github y hacer un release usando el tag generado.
+
+
 
 ### Recomendaciones Adicionales
 
@@ -117,7 +129,6 @@ git merge --no-ff release/1.2.0
 - Mantener las ramas actualizadas con su origen
 - Hacer merge solo cuando el código esté probado
 - Usar `--no-ff` para mantener el histórico de las ramas
+- Para configurar el `--no-ff` hay que ir a opciones generales del repositorio y baja a la session pull request y habilitar el allow merge commits y deshabilitar el allow squash merging y el allow rebase merging
 
-Este modelo proporciona una estructura clara para el desarrollo de software, especialmente útil en equipos grandes o proyectos con releases frecuentes. Sin embargo, puede adaptarse según las necesidades específicas del proyecto y el equipo.
 
-¿Hay algún aspecto específico sobre Git Flow que te gustaría que profundizara?
