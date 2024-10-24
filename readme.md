@@ -1,4 +1,3 @@
-Te haré un desglose detallado y amigable de cada sección, usando analogías y ejemplos prácticos.
 
 1. **Git Local - En Profundidad**
 
@@ -195,5 +194,3 @@ C. **Mejores Prácticas**
    3. Ramas cortas y enfocadas
    4. Revisión de código
    5. Documentación actualizada
-
-¿Te gustaría que profundice en algún aspecto específico o que agregue más ejemplos prácticos?
